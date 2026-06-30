@@ -3,269 +3,377 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Sasin Charoensuksira | Digital Business Card</title>
-  <meta name="description" content="Digital business card of Dr. Sasin Charoensuksira, M.D., Ph.D. | Aesthetic Dermatology, Dermatology, Research, Precision Medicine, Bioinformatics, Multi-omics, and AI in Dermatology." />
+  <title>Dr. Sasin Charoensuksira | Dermatology • Aesthetic Medicine • Research</title>
+  <meta name="description" content="Academic portfolio and digital business card of Dr. Sasin Charoensuksira, M.D., Ph.D. Special Instructor at Chulabhorn International College of Medicine, Thammasat University, and Doctor at DSK Clinic." />
   <meta property="og:title" content="Dr. Sasin Charoensuksira, M.D., Ph.D." />
-  <meta property="og:description" content="Aesthetic Dermatology | Dermatology | Research | Precision Medicine" />
+  <meta property="og:description" content="Aesthetic Dermatology | Dermatology | Precision Medicine | Bioinformatics | Multi-omics | AI in Dermatology" />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0b1f3a" />
+  <meta name="theme-color" content="#081a2f" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <style>
     :root{
-      --navy:#0b1f3a;
-      --navy2:#102b4d;
-      --gold:#c8a45d;
-      --cream:#f7f3ea;
-      --ink:#182235;
+      --navy:#081a2f;
+      --navy2:#0e2a49;
+      --gold:#c7a45d;
+      --gold2:#e5d2a2;
+      --cream:#f7f2e8;
+      --paper:#fffdfa;
+      --ink:#142033;
       --muted:#657084;
-      --line:rgba(200,164,93,.32);
+      --line:rgba(199,164,93,.32);
+      --soft:#f6f7f9;
       --white:#ffffff;
+      --shadow:0 30px 80px rgba(5,20,42,.18);
+      --radius:28px;
     }
     *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
     body{
       margin:0;
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial,sans-serif;
       color:var(--ink);
       background:
-        radial-gradient(circle at 20% 0%, rgba(200,164,93,.18), transparent 28%),
-        linear-gradient(135deg, #07172c 0%, #0b1f3a 40%, #f7f3ea 40%, #fff 100%);
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:32px 16px;
+        radial-gradient(circle at 12% 0%, rgba(199,164,93,.20), transparent 25%),
+        radial-gradient(circle at 85% 10%, rgba(9,36,68,.14), transparent 24%),
+        linear-gradient(180deg,#f9f5ec 0%,#ffffff 46%,#f7f8fb 100%);
+      line-height:1.6;
+    }
+    a{color:inherit}
+    .nav{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter:blur(16px);
+      background:rgba(255,255,255,.78);
+      border-bottom:1px solid rgba(8,26,47,.08);
+    }
+    .nav-inner{
+      max-width:1120px;margin:0 auto;padding:14px 20px;
+      display:flex;align-items:center;justify-content:space-between;gap:16px;
+    }
+    .brand-mini{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--navy);letter-spacing:.02em}
+    .mini-logo{
+      width:34px;height:34px;border-radius:11px;background:var(--navy);
+      color:var(--gold);display:grid;place-items:center;
+      font-family:Georgia,serif;font-weight:700;border:1px solid var(--gold);
+    }
+    .nav-links{display:flex;gap:18px;align-items:center;font-size:14px;color:#344056}
+    .nav-links a{text-decoration:none}
+    .nav-links a:hover{color:var(--gold)}
+    .container{max-width:1120px;margin:0 auto;padding:0 20px}
+    .hero{
+      min-height:calc(100vh - 64px);
+      display:grid;align-items:center;
+      padding:54px 0 62px;
     }
     .card{
-      width:min(100%, 980px);
-      background:rgba(255,255,255,.92);
-      backdrop-filter: blur(18px);
-      border:1px solid rgba(255,255,255,.55);
-      border-radius:32px;
+      display:grid;grid-template-columns:.9fr 1.3fr;
+      background:rgba(255,255,255,.88);
+      border:1px solid rgba(255,255,255,.72);
+      border-radius:38px;
+      box-shadow:var(--shadow);
       overflow:hidden;
-      box-shadow:0 30px 80px rgba(0,0,0,.22);
-      display:grid;
-      grid-template-columns: .9fr 1.35fr;
     }
-    .brand{
+    .card-left{
       background:
-        linear-gradient(160deg, rgba(200,164,93,.22), transparent 42%),
+        linear-gradient(150deg,rgba(199,164,93,.28),transparent 38%),
         linear-gradient(180deg,var(--navy),var(--navy2));
       color:white;
       padding:42px 34px;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-      min-height:650px;
+      min-height:640px;
       position:relative;
+      display:flex;flex-direction:column;justify-content:space-between;
       overflow:hidden;
     }
-    .brand:after{
-      content:"";
-      position:absolute;
-      width:260px;height:260px;
-      border:1px solid rgba(200,164,93,.30);
-      border-radius:50%;
-      right:-90px;bottom:-80px;
+    .card-left:before{
+      content:"";position:absolute;width:420px;height:420px;border-radius:50%;
+      border:1px solid rgba(229,210,162,.20);
+      left:-170px;bottom:-140px;
     }
-    .monogram{
-      width:86px;height:86px;
-      border:1.5px solid var(--gold);
-      border-radius:24px;
-      display:flex;align-items:center;justify-content:center;
-      font-family:Georgia,serif;
-      font-size:32px;
-      letter-spacing:1px;
-      color:var(--gold);
-      margin-bottom:26px;
+    .profile-wrap{position:relative;z-index:1}
+    .photo{
+      width:142px;height:142px;border-radius:50%;
+      background:
+        linear-gradient(135deg,rgba(199,164,93,.28),rgba(255,255,255,.10)),
+        url('profile.jpg') center/cover;
+      border:3px solid var(--gold);
+      box-shadow:0 16px 40px rgba(0,0,0,.22);
+      margin-bottom:22px;
+      overflow:hidden;
+    }
+    .photo-fallback{
+      width:100%;height:100%;
+      display:grid;place-items:center;
+      font-family:Georgia,serif;font-size:44px;color:var(--gold);
+      background:linear-gradient(150deg,#0b2039,#17395f);
     }
     h1{
       font-family:Georgia,"Times New Roman",serif;
-      font-weight:500;
-      font-size:34px;
-      line-height:1.1;
-      margin:0 0 12px;
+      font-weight:500;font-size:44px;line-height:1.06;margin:0 0 12px;
       letter-spacing:.2px;
     }
-    .credential{
-      color:var(--gold);
-      font-weight:650;
-      letter-spacing:.08em;
-      text-transform:uppercase;
-      font-size:13px;
-      margin-bottom:24px;
+    .degree{
+      color:var(--gold2);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:13px;margin-bottom:20px;
     }
-    .tagline{
-      font-size:17px;
-      line-height:1.55;
-      color:rgba(255,255,255,.86);
-      max-width:310px;
+    .hero-desc{color:rgba(255,255,255,.84);font-size:17px;max-width:330px}
+    .monogram{
+      position:relative;z-index:1;width:78px;height:78px;border-radius:23px;
+      border:1.5px solid var(--gold);display:grid;place-items:center;
+      color:var(--gold);font-family:Georgia,serif;font-size:30px;font-weight:700;
     }
-    .brand-footer{
-      position:relative;
-      z-index:1;
-      color:rgba(255,255,255,.74);
-      font-size:13px;
-      line-height:1.6;
-      border-top:1px solid rgba(200,164,93,.35);
-      padding-top:18px;
+    .card-right{padding:46px 48px;background:linear-gradient(135deg,#fff,#fffdfa)}
+    .eyebrow{color:var(--gold);font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:900;margin-bottom:10px}
+    .headline{
+      font-family:Georgia,"Times New Roman",serif;font-size:34px;line-height:1.18;color:var(--navy);margin:0 0 14px;font-weight:500;
     }
-    main{padding:42px 44px}
-    .section{margin-bottom:28px}
-    .label{
-      color:var(--gold);
-      font-size:12px;
-      font-weight:800;
-      text-transform:uppercase;
-      letter-spacing:.14em;
-      margin-bottom:12px;
-    }
+    .sub{font-size:16px;color:var(--muted);margin:0 0 24px}
+    .roles{display:grid;gap:12px;margin:24px 0}
     .role{
-      display:flex;
-      gap:14px;
-      padding:15px 0;
-      border-bottom:1px solid rgba(11,31,58,.08);
+      display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start;
+      padding:15px 0;border-bottom:1px solid rgba(8,26,47,.08);
     }
     .role:last-child{border-bottom:0}
     .icon{
-      width:38px;height:38px;
-      border-radius:14px;
-      flex:0 0 auto;
-      display:flex;align-items:center;justify-content:center;
-      color:var(--gold);
-      background:rgba(200,164,93,.12);
-      font-size:18px;
+      width:42px;height:42px;border-radius:15px;display:grid;place-items:center;
+      background:rgba(199,164,93,.12);color:#8e6d27;font-size:18px;border:1px solid rgba(199,164,93,.28);
     }
-    .role strong{display:block;font-size:16px;margin-bottom:4px;color:var(--navy)}
-    .role span{display:block;font-size:14.5px;color:var(--muted);line-height:1.45}
-    .chips{display:flex;flex-wrap:wrap;gap:9px}
-    .chip{
-      border:1px solid rgba(200,164,93,.45);
-      color:#5b451d;
-      background:#fffaf0;
-      padding:8px 11px;
-      border-radius:999px;
-      font-size:13.5px;
-      font-weight:600;
-    }
-    .buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-top:18px}
+    .role strong{display:block;color:var(--navy);font-size:16px;margin-bottom:3px}
+    .role span{display:block;color:var(--muted);font-size:14.5px;line-height:1.45}
+    .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
     .btn{
-      text-decoration:none;
-      border-radius:16px;
-      padding:13px 14px;
-      text-align:center;
-      font-weight:750;
-      font-size:14px;
-      transition:.18s ease;
-      border:1px solid rgba(11,31,58,.12);
+      display:inline-flex;align-items:center;justify-content:center;
+      min-height:46px;padding:12px 17px;border-radius:999px;
+      text-decoration:none;font-weight:800;font-size:14px;transition:.18s ease;border:1px solid rgba(8,26,47,.12);
     }
     .btn.primary{background:var(--navy);color:white;border-color:var(--navy)}
-    .btn.secondary{background:white;color:var(--navy)}
-    .btn:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(11,31,58,.12)}
-    .contact{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:12px;
+    .btn.gold{background:var(--gold);color:#07172c;border-color:var(--gold)}
+    .btn.ghost{background:white;color:var(--navy)}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(8,26,47,.14)}
+    section{padding:70px 0}
+    .section-title{max-width:760px;margin:0 0 28px}
+    .section-title h2{
+      font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:34px;line-height:1.2;margin:0;color:var(--navy);
     }
-    .contact a,.contact div{
-      color:var(--ink);
-      text-decoration:none;
-      background:#f8f9fb;
-      border:1px solid rgba(11,31,58,.08);
-      border-radius:16px;
-      padding:12px 14px;
-      font-size:14px;
-      line-height:1.35;
+    .section-title p{margin:10px 0 0;color:var(--muted)}
+    .grid{display:grid;gap:18px}
+    .grid.three{grid-template-columns:repeat(3,1fr)}
+    .grid.two{grid-template-columns:repeat(2,1fr)}
+    .panel{
+      background:rgba(255,255,255,.86);
+      border:1px solid rgba(8,26,47,.08);
+      border-radius:var(--radius);
+      padding:26px;
+      box-shadow:0 16px 44px rgba(8,26,47,.06);
     }
-    .contact small{display:block;color:var(--muted);font-weight:700;margin-bottom:3px}
-    .footnote{
-      font-size:12px;
-      color:var(--muted);
-      line-height:1.5;
-      margin-top:20px;
-      padding-top:18px;
-      border-top:1px solid rgba(11,31,58,.08);
+    .panel h3{margin:0 0 8px;color:var(--navy);font-size:18px}
+    .panel p{margin:0;color:var(--muted);font-size:15px}
+    .chips{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{
+      background:#fffaf0;border:1px solid rgba(199,164,93,.42);color:#5a4219;
+      padding:9px 12px;border-radius:999px;font-weight:750;font-size:13px;
     }
-    @media (max-width:820px){
-      body{align-items:flex-start;background:linear-gradient(180deg,#0b1f3a 0,#0b1f3a 220px,#f7f3ea 220px,#fff 100%)}
-      .card{grid-template-columns:1fr;border-radius:26px}
-      .brand{min-height:auto;padding:34px 28px}
-      main{padding:32px 26px}
-      h1{font-size:30px}
-      .buttons,.contact{grid-template-columns:1fr}
+    .timeline{display:grid;gap:14px}
+    .line-item{
+      padding-left:20px;border-left:2px solid var(--line);
+    }
+    .line-item strong{display:block;color:var(--navy)}
+    .line-item span{color:var(--muted);font-size:14px}
+    .contact-card{
+      background:linear-gradient(135deg,var(--navy),var(--navy2));
+      color:white;border-radius:34px;padding:34px;
+      display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;
+      box-shadow:var(--shadow);
+    }
+    .contact-card h2{font-family:Georgia,serif;font-size:32px;font-weight:500;margin:0 0 10px}
+    .contact-card p{margin:0;color:rgba(255,255,255,.78)}
+    .contact-list{display:grid;gap:10px}
+    .contact-list a,.contact-list div{
+      text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);
+      border-radius:18px;padding:13px 15px;color:white;font-weight:700;
+    }
+    .footer{padding:34px 20px;color:var(--muted);font-size:13px;text-align:center;border-top:1px solid rgba(8,26,47,.08)}
+    @media(max-width:900px){
+      .nav-links{display:none}
+      .card{grid-template-columns:1fr}
+      .card-left{min-height:auto;padding:34px 28px}
+      .card-right{padding:34px 28px}
+      h1{font-size:38px}
+      .grid.three,.grid.two,.contact-card{grid-template-columns:1fr}
     }
   </style>
 </head>
 <body>
-  <article class="card">
-    <aside class="brand">
-      <div>
-        <div class="monogram">SC</div>
-        <h1>Dr. Sasin<br>Charoensuksira</h1>
-        <div class="credential">M.D., Ph.D.</div>
-        <p class="tagline">
-          Aesthetic Dermatology • Dermatology • Research • Precision Medicine
-        </p>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand-mini" href="#top" style="text-decoration:none"><span class="mini-logo">SC</span> Sasin Charoensuksira</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
       </div>
-      <div class="brand-footer">
-        Clinician-scientist focused on evidence-driven dermatology, aesthetic medicine, longevity, bioinformatics, multi-omics, and AI in dermatology.
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="container">
+      <div class="card">
+        <aside class="card-left">
+          <div class="profile-wrap">
+            <div class="photo"><div class="photo-fallback">SC</div></div>
+            <h1>Dr. Sasin<br>Charoensuksira</h1>
+            <div class="degree">M.D., Ph.D.</div>
+            <p class="hero-desc">
+              Aesthetic dermatology, academic dermatology, precision medicine, and data-driven skin science.
+            </p>
+          </div>
+          <div class="monogram">SC</div>
+        </aside>
+
+        <main class="card-right">
+          <div class="eyebrow">Digital Business Card + Academic Portfolio</div>
+          <h2 class="headline">Clinician-scientist in dermatology and aesthetic medicine.</h2>
+          <p class="sub">
+            Focused on evidence-based dermatology, aesthetic innovation, longevity medicine, bioinformatics, multi-omics, and artificial intelligence in dermatology.
+          </p>
+
+          <div class="roles">
+            <div class="role">
+              <div class="icon">✦</div>
+              <div><strong>Ph.D. in Dermatology</strong><span>Research interest in dermatology, aesthetic medicine, precision medicine, bioinformatics, multi-omics, and AI in dermatology.</span></div>
+            </div>
+            <div class="role">
+              <div class="icon">◈</div>
+              <div><strong>Special Instructor</strong><span>Chulabhorn International College of Medicine, Thammasat University.</span></div>
+            </div>
+            <div class="role">
+              <div class="icon">✚</div>
+              <div><strong>Doctor</strong><span>DSK Clinic | Aesthetic & dermatology practice.</span></div>
+            </div>
+          </div>
+
+          <div class="actions">
+            <a class="btn primary" href="sasin-charoensuksira.vcf" download>Save Contact</a>
+            <a class="btn ghost" href="mailto:sasinboong@gmail.com">Email</a>
+            <a class="btn ghost" href="tel:+66816773334">Call</a>
+            <a class="btn gold" href="#portfolio">View Portfolio</a>
+          </div>
+        </main>
       </div>
-    </aside>
+    </div>
+  </header>
 
-    <main>
-      <section class="section">
-        <div class="label">Professional Profile</div>
-        <div class="role">
-          <div class="icon">✦</div>
-          <div>
-            <strong>Ph.D. in Dermatology</strong>
-            <span>Clinical, translational, and computational dermatology research.</span>
-          </div>
+  <section id="about">
+    <div class="container">
+      <div class="section-title">
+        <div class="eyebrow">About</div>
+        <h2>Academic and clinical profile</h2>
+        <p>A concise professional profile for networking, academic collaboration, and clinical connections.</p>
+      </div>
+      <div class="grid three">
+        <div class="panel">
+          <h3>Clinical Practice</h3>
+          <p>Aesthetic and dermatology practice with focus on evidence-based, patient-centered care.</p>
         </div>
-        <div class="role">
-          <div class="icon">✚</div>
-          <div>
-            <strong>Aesthetic & Dermatology Practice</strong>
-            <span>Doctor at DSK Clinic.</span>
-          </div>
+        <div class="panel">
+          <h3>Academic Role</h3>
+          <p>Special Instructor at Chulabhorn International College of Medicine, Thammasat University.</p>
         </div>
-        <div class="role">
-          <div class="icon">◈</div>
-          <div>
-            <strong>Special Instructor</strong>
-            <span>Chulabhorn International College of Medicine, Thammasat University.</span>
-          </div>
+        <div class="panel">
+          <h3>Research Direction</h3>
+          <p>Dermatology research integrating translational science, computational biology, and precision medicine.</p>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section class="section">
-        <div class="label">Contact</div>
-        <div class="contact">
-          <a href="tel:+66816773334"><small>Tel</small>+66 81 677 3334</a>
-          <a href="mailto:sasinboong@gmail.com"><small>Email</small>sasinboong@gmail.com</a>
-        </div>
-        <div class="buttons">
-          <a class="btn primary" href="sasin-charoensuksira.vcf" download>Save Contact</a>
-          <a class="btn secondary" href="mailto:sasinboong@gmail.com">Send Email</a>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="label">Research Interests</div>
+  <section id="research">
+    <div class="container">
+      <div class="section-title">
+        <div class="eyebrow">Research Interests</div>
+        <h2>From dermatology to precision skin science</h2>
+        <p>Clinical questions translated into molecular, computational, and AI-assisted approaches.</p>
+      </div>
+      <div class="panel">
         <div class="chips">
           <span class="chip">Dermatology</span>
           <span class="chip">Aesthetic Medicine</span>
+          <span class="chip">Longevity Medicine</span>
           <span class="chip">Precision Medicine</span>
           <span class="chip">Bioinformatics</span>
           <span class="chip">Multi-omics</span>
-          <span class="chip">AI in Dermatology</span>
-          <span class="chip">Longevity Medicine</span>
+          <span class="chip">Artificial Intelligence in Dermatology</span>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <p class="footnote">
-        This page is designed as a digital business card for professional networking, academic collaboration, and clinical contact.
-      </p>
-    </main>
-  </article>
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-title">
+        <div class="eyebrow">Academic Portfolio</div>
+        <h2>Selected professional links</h2>
+        <p>Add your ORCID, ResearchGate, Google Scholar, PubMed, or CV links here.</p>
+      </div>
+      <div class="grid three">
+        <a class="panel" href="#" target="_blank" rel="noopener" style="text-decoration:none">
+          <h3>ORCID</h3>
+          <p>Replace this placeholder link with your ORCID profile URL.</p>
+        </a>
+        <a class="panel" href="#" target="_blank" rel="noopener" style="text-decoration:none">
+          <h3>ResearchGate</h3>
+          <p>Replace this placeholder link with your ResearchGate profile URL.</p>
+        </a>
+        <a class="panel" href="#" target="_blank" rel="noopener" style="text-decoration:none">
+          <h3>Google Scholar / PubMed</h3>
+          <p>Optional academic publication profile links.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="cv">
+    <div class="container">
+      <div class="section-title">
+        <div class="eyebrow">CV</div>
+        <h2>Curriculum vitae and professional timeline</h2>
+        <p>Upload your CV PDF as <strong>sasin-cv.pdf</strong> to activate the download button.</p>
+      </div>
+      <div class="grid two">
+        <div class="panel">
+          <h3>Professional Timeline</h3>
+          <div class="timeline">
+            <div class="line-item"><strong>Doctor</strong><span>DSK Clinic</span></div>
+            <div class="line-item"><strong>Special Instructor</strong><span>Chulabhorn International College of Medicine, Thammasat University</span></div>
+            <div class="line-item"><strong>Ph.D. in Dermatology</strong><span>Dermatology research and academic training</span></div>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Download CV</h3>
+          <p>Place your CV file in this website folder and rename it to <strong>sasin-cv.pdf</strong>.</p>
+          <div class="actions"><a class="btn primary" href="sasin-cv.pdf" target="_blank" rel="noopener">Open CV</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <div>
+          <h2>Let’s connect</h2>
+          <p>For academic collaboration, professional networking, clinical communication, and speaking opportunities.</p>
+        </div>
+        <div class="contact-list">
+          <a href="mailto:sasinboong@gmail.com">sasinboong@gmail.com</a>
+          <a href="tel:+66816773334">+66 81 677 3334</a>
+          <div>Bangkok, Thailand</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © <span id="year">2026</span> Dr. Sasin Charoensuksira. Designed as a digital business card and academic portfolio.
+  </footer>
 </body>
 </html>

@@ -1,34 +1,19 @@
-# Dr. Sasin Charoensuksira — Digital Business Card
+# Sasin Charoensuksira Academic Portfolio
 
-This folder is ready for GitHub Pages.
+Upload these files to the root of your GitHub Pages repository: `sasinboong.github.io`.
 
-## How to publish on GitHub Pages
+## Files
+- `index.html` — main website
+- `sasin-charoensuksira.vcf` — downloadable contact card
+- `favicon.svg` — browser icon
+- `profile.jpg` — optional profile image placeholder
+- `sasin-cv.pdf` — optional CV placeholder
 
-1. Create a new GitHub repository named:
+## To add your real profile photo
+Replace `profile.jpg` with your own photo using the same file name.
 
-   `sasinboong.github.io`
+## To add your real CV
+Replace `sasin-cv.pdf` with your CV PDF using the same file name.
 
-2. Upload all files in this folder:
-   - `index.html`
-   - `sasin-charoensuksira.vcf`
-   - `favicon.svg`
-   - `README.md`
-
-3. Go to **Settings → Pages**.
-
-4. Under **Build and deployment**, choose:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/root`
-
-5. Save.
-
-Your website should become available at:
-
-`https://sasinboong.github.io`
-
-After that, create a QR code pointing to that URL.
-
-## Suggested QR label on business card
-
-`Scan for Digital Card`
+## To add ORCID / ResearchGate links
+Open `index.html`, find the Academic Portfolio section, and replace `href="#"` with your real URLs.
